@@ -3,6 +3,7 @@
 # Portfolio: setup and mobile version skeleton
 
 > One paragraph statement about the project.
+![2021-12-06_11-08-31](https://user-images.githubusercontent.com/63915024/144799478-6e2cdee1-6ca9-4dc6-bf82-a9df88227646.png)
 
 
 
