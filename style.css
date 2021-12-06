@@ -373,6 +373,7 @@ p {
   font-size: 20px;
   margin-bottom: 4rem;
 }
+
 .elements {
   position: static;
   width: 303px;
@@ -382,7 +383,7 @@ p {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px 0;
   background: #f7f7f9;
   border-radius: 8px;
 }
