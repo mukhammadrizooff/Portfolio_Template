@@ -1,8 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: setup and desktop version skeleton
+# Portfolio: setup and desktop version 
 
 > One paragraph statement about the project.
+![2021-12-07_22-55-04](https://user-images.githubusercontent.com/63915024/145084853-b3539091-d707-4bcc-b3eb-5d84bdd33c72.png)
 
 
 
@@ -16,7 +17,7 @@
 
 ## Live Showroom
 
-[Live Showroom Link](#)
+Live Showroom Link
 
 ## Author
 
