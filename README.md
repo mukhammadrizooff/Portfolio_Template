@@ -1,9 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: setup and mobile version skeleton
+# Portfolio: setup and desktop version 
 
 > One paragraph statement about the project.
-![2021-12-06_11-08-31](https://user-images.githubusercontent.com/63915024/144799478-6e2cdee1-6ca9-4dc6-bf82-a9df88227646.png)
+![2021-12-07_22-55-04](https://user-images.githubusercontent.com/63915024/145084853-b3539091-d707-4bcc-b3eb-5d84bdd33c72.png)
+
 
 
 
@@ -16,7 +17,7 @@
 
 ## Live Showroom
 
-[Live Showroom Link](https://mukhammadrizooff.github.io/Portfolio_Template/)
+Live Showroom Link
 
 ## Author
 
