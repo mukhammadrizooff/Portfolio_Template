@@ -290,6 +290,18 @@ p {
   margin-right: 2rem;
 }
 
+.try-p {
+  display: flex;
+  justify-content: space-between;
+  font-size: medium;
+  font-weight: normal;
+}
+
+.p-underline {
+  border-bottom: thin solid #dfe1e6;
+  padding-bottom: 2em;
+}
+
 .works__left-block .works__tags li {
   font-style: normal;
   background-color: #ebebff;
@@ -701,5 +713,18 @@ p {
 
   .i-button {
     align-items: center;
+  }
+
+  .try-p {
+    width: 100%;
+  }
+
+  .about-myself {
+    padding-right: 13rem;
+  }
+
+  .p-underline {
+    border-bottom: thin solid #dfe1e6;
+    padding-bottom: 2em;
   }
 }
