@@ -668,6 +668,7 @@ p {
     justify-content: center;
     align-items: center;
     padding-left: 13rem;
+    padding-right: 13rem;
   }
 
   .about-myself__block {
@@ -717,10 +718,6 @@ p {
 
   .try-p {
     width: 100%;
-  }
-
-  .about-myself {
-    padding-right: 13rem;
   }
 
   .p-underline {
