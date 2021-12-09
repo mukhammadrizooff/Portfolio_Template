@@ -293,7 +293,7 @@ p {
 .langguages-ul li:hover {
   border: 0.1rem solid #6070ff;
   transform: scale(1.05);
-  cursor: pointer;
+  
 }
 
 .about-myself .langguages-ul li img {
