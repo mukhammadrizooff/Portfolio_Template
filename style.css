@@ -169,6 +169,10 @@ p {
   justify-content: flex-start;
 }
 
+.social-media__ul li a img:hover {
+  transform: scale(1.3);
+}
+
 .headline__social-media a {
   margin-right: 2rem;
 }
@@ -284,6 +288,12 @@ p {
   border-radius: 8px;
   padding: 1rem;
   width: 100%;
+}
+
+.langguages-ul li:hover {
+  border: 0.1rem solid #6070ff;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .about-myself .langguages-ul li img {
@@ -597,6 +607,18 @@ p {
     margin-top: 10rem;
     font-size: 4rem;
     line-height: 5.2rem;
+    position: relative;
+    animation-name: headline-h1;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+
+  @keyframes headline-h1 {
+    0%   {background-color:none; left:0px; top:0px;}
+    25%  {background-color:none; left:200px; top:0px;}
+    50%  {background-color:none; left:0px; top:200px;}
+    75%  {background-color:none; left:200px; top:0px;}
+    100% {background-color:none; left:0px; top:0px;}
   }
 
   .headline p {
@@ -687,6 +709,12 @@ p {
     justify-content: center;
     align-items: flex-start;
     width: 16%;
+  }
+
+  .langguages-ul li:hover {
+    border: 0.1rem solid #6070ff;
+    transform: scale(1.05);
+    cursor: pointer;
   }
 
   .about-myself__primary-par {
