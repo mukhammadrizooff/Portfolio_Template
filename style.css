@@ -294,7 +294,6 @@ p {
   border: 0.1rem solid #6070ff;
   transform: scale(1.05);
   cursor: pointer;
-  
 }
 
 .about-myself .langguages-ul li img {
@@ -615,11 +614,31 @@ p {
   }
 
   @keyframes headline-h1 {
-    0%   {background-color:none; left:0px; top:0px;}
-    25%  {background-color:none; left:200px; top:0px;}
-    50%  {background-color:none; left:0px; top:200px;}
-    75%  {background-color:none; left:200px; top:0px;}
-    100% {background-color:none; left:0px; top:0px;}
+    0% {
+      background-color: none;
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      background-color: none;
+      left: 200px;
+      top: 0px;
+    }
+    50% {
+      background-color: none;
+      left: 0px;
+      top: 200px;
+    }
+    75% {
+      background-color: none;
+      left: 200px;
+      top: 0px;
+    }
+    100% {
+      background-color: none;
+      left: 0px;
+      top: 0px;
+    }
   }
 
   .headline p {
