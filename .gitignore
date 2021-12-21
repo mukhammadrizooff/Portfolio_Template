@@ -1,9 +1,2 @@
 node_modules/
-
 hint-report/
-
-.hintrc
-
-.eslintrc.json
-
-.stylelintrc.json
