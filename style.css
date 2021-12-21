@@ -22,6 +22,14 @@ body {
   overflow-x: hidden;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.btn {
+  transition: all 0.3s ease-out;
+}
+
 header {
   width: 100%;
 }
@@ -96,6 +104,60 @@ header .nav__button[disabled] {
 
 header .desktop-menu-container {
   display: none;
+}
+
+.menu-mobile {
+  width: 100vw;
+  height: 100vh;
+}
+
+.mobile-menu-container {
+  position: absolute;
+  top: 0;
+  background: rgba(96, 112, 2550, 0.8);
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  backdrop-filter: blur(0.5rem);
+}
+
+.close-btn {
+  padding: 0.5rem;
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  outline: inherit;
+  display: flex;
+  align-content: flex-end;
+  margin-right: 1rem;
+  margin-top: 3rem;
+  margin-left: 12rem;
+}
+
+.mobile-menu-ul {
+  margin-top: 8rem;
+  margin-left: 4rem;
+}
+
+.mobile-menu-ul li {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.mobile-menu-ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.visible {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 main {
