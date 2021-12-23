@@ -1,26 +1,26 @@
-const menu = document.querySelector("#menu-container");
-const closeButton = document.querySelector(".close-btn");
-const hamburger = document.querySelector("#hamburger-btn");
-const body = document.querySelector("body");
-const anchorTags = document.querySelectorAll(".mobile-menu-ul li");
+const menu = document.querySelector('#menu-container');
+const closeButton = document.querySelector('.close-btn');
+const hamburger = document.querySelector('#hamburger-btn');
+const body = document.querySelector('body');
+const anchorTags = document.querySelectorAll('.mobile-menu-ul li');
 
 function openMenuIcon() {
-  menu.classList.add("visible");
-  body.classList.add("overflow-hidden");
+  menu.classList.add('visible');
+  body.classList.add('overflow-hidden');
 }
 
 function closeMenuIcon() {
-  menu.classList.remove("visible");
-  body.classList.remove("overflow-hidden");
+  menu.classList.remove('visible');
+  body.classList.remove('overflow-hidden');
 }
 
-hamburger.addEventListener("click", openMenuIcon);
-closeButton.addEventListener("click", closeMenuIcon);
+hamburger.addEventListener('click', openMenuIcon);
+closeButton.addEventListener('click', closeMenuIcon);
 anchorTags.forEach((link) => {
-  link.addEventListener("click", closeMenuIcon);
+  link.addEventListener('click', closeMenuIcon);
 });
 
-//Menu bar scroll control
+// Menu bar scroll control
 
 // const header = document.getElementById("header");
 // const sticky = header.offsetTop;
@@ -33,52 +33,56 @@ anchorTags.forEach((link) => {
 //   }
 // }
 
+// window.onscroll = function () {
+//   myFunction();
+// };
+
 // Project Objects
 
 const projectObjects = [
   {
-    name: "Tonic",
+    name: 'Tonic',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     descriptionPopup:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod nesciunt doloremque eveniet, recusandae esse voluptatibus sapiente optio totam! Aliquam deleniti necessitatibus debitis alias magnam mollitia culpa beatae totam qui?",
-    image: "images/Snapshoot-Portfolio.png",
-    languages: ["html", "css", "javaScript"],
-    liveVersion: "#",
-    source: "#",
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod nesciunt doloremque eveniet, recusandae esse voluptatibus sapiente optio totam! Aliquam deleniti necessitatibus debitis alias magnam mollitia culpa beatae totam qui?',
+    image: 'images/Snapshoot-Portfolio.png',
+    languages: ['html', 'css', 'javaScript'],
+    liveVersion: '#',
+    source: '#',
   },
   {
-    name: "Multi-Post Stories",
+    name: 'Multi-Post Stories',
     description:
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     descriptionPopup:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod nesciunt doloremque eveniet, recusandae esse voluptatibus sapiente optio totam! Aliquam deleniti necessitatibus debitis alias magnam mollitia culpa beatae totam qui?",
-    image: "images/Snapshoot-Portfolio2.png",
-    languages: ["html", "Ruby on rails", "css", "javaScript"],
-    liveVersion: "#",
-    source: "#",
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod nesciunt doloremque eveniet, recusandae esse voluptatibus sapiente optio totam! Aliquam deleniti necessitatibus debitis alias magnam mollitia culpa beatae totam qui?',
+    image: 'images/Snapshoot-Portfolio2.png',
+    languages: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    liveVersion: '#',
+    source: '#',
   },
   {
-    name: "Facebook 360",
+    name: 'Facebook 360',
     description:
-      "Exploring the future of media in Facebook first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+      'Exploring the future of media in Facebook first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     descriptionPopup:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod nesciunt doloremque eveniet, recusandae esse voluptatibus sapiente optio totam! Aliquam deleniti necessitatibus debitis alias magnam mollitia culpa beatae totam qui?",
-    image: "images/Snapshoot-Portfolio3.png",
-    languages: ["html", "Ruby on rails", "css", "javaScript"],
-    liveVersion: "#",
-    source: "#",
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod nesciunt doloremque eveniet, recusandae esse voluptatibus sapiente optio totam! Aliquam deleniti necessitatibus debitis alias magnam mollitia culpa beatae totam qui?',
+    image: 'images/Snapshoot-Portfolio3.png',
+    languages: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    liveVersion: '#',
+    source: '#',
   },
   {
-    name: "Uber Navigation",
+    name: 'Uber Navigation',
     description:
-      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     descriptionPopup:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod nesciunt doloremque eveniet, recusandae esse voluptatibus sapiente optio totam! Aliquam deleniti necessitatibus debitis alias magnam mollitia culpa beatae totam qui?",
-    image: "images/Snapshoot-Portfolio4.png",
-    languages: ["html", "Ruby on rails", "css", "javaScript"],
-    liveVersion: "#",
-    source: "#",
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod nesciunt doloremque eveniet, recusandae esse voluptatibus sapiente optio totam! Aliquam deleniti necessitatibus debitis alias magnam mollitia culpa beatae totam qui?',
+    image: 'images/Snapshoot-Portfolio4.png',
+    languages: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    liveVersion: '#',
+    source: '#',
   },
 ];
 
@@ -110,16 +114,16 @@ function createCard(element) {
 }
 
 const myProjects = projectObjects.map((element, index) => {
-  const article = document.createElement("article");
-  article.className = "works__card";
+  const article = document.createElement('article');
+  article.className = 'works__card';
   if (index % 2 === 1) {
-    article.classList.add("card2");
+    article.classList.add('card2');
   }
   article.innerHTML = createCard(element);
   return article;
 });
 
-const worksSection = document.getElementById("works");
+const worksSection = document.getElementById('works');
 
 for (let i = 0; i < myProjects.length; i += 1) {
   worksSection.appendChild(myProjects[i]);
@@ -168,32 +172,28 @@ function createModal(element) {
 `;
 }
 
-const modalBtn = document.querySelectorAll("#showModal");
-const modalSection = document.getElementById("modal-container");
+const modalBtn = document.querySelectorAll('#showModal');
+const modalSection = document.getElementById('modal-container');
 
 function openModal() {
-  modalSection.classList.add("show-modal");
-  body.classList.add("overflow-hidden");
+  modalSection.classList.add('show-modal');
+  body.classList.add('overflow-hidden');
 }
 
 function closeModal() {
-  modalSection.classList.remove("show-modal");
-  body.classList.remove("overflow-hidden");
-  modalSection.innerHTML = "";
+  modalSection.classList.remove('show-modal');
+  body.classList.remove('overflow-hidden');
+  modalSection.innerHTML = '';
 }
 
 modalBtn.forEach((element, index) => {
-  element.addEventListener("click", () => {
+  element.addEventListener('click', () => {
     openModal();
-    const modalArticle = document.createElement("article");
-    modalArticle.className = "modal-card";
+    const modalArticle = document.createElement('article');
+    modalArticle.className = 'modal-card';
     modalArticle.innerHTML = createModal(projectObjects[index]);
     modalSection.appendChild(modalArticle);
-    const closeModalBtn = document.querySelector("#close-button-2");
-    closeModalBtn.addEventListener("click", closeModal);
+    const closeModalBtn = document.querySelector('#close-button-2');
+    closeModalBtn.addEventListener('click', closeModal);
   });
 });
-
-window.onscroll = function () {
-  myFunction();
-};
