@@ -1,3 +1,4 @@
+
 const menu = document.querySelector("#menu-container");
 const closeButton = document.querySelector(".close-btn");
 const hamburger = document.querySelector("#hamburger-btn");
@@ -114,10 +115,27 @@ const myProjects = projectObjects.map((element, index) => {
   article.className = "works__card";
   if (index % 2 === 1) {
     article.classList.add("card2");
+    
+function main() {
+  const menu = document.querySelector('#menu-container');
+  const closeButton = document.querySelector('.close-btn');
+  const hamburger = document.querySelector('#humburger-btn');
+  const body = document.querySelector('body');
+  const anchorTags = document.querySelectorAll('.mobile-menu-ul li');
+
+  function openMenuIcon() {
+    menu.classList.add('visible');
+    body.classList.add('overflow-hidden');
+  }
+
+  function closeMenuIcon() {
+    menu.classList.remove('visible');
+    body.classList.remove('overflow-hidden');
   }
   article.innerHTML = createCard(element);
   return article;
 });
+
 
 const worksSection = document.getElementById("works");
 
@@ -197,3 +215,11 @@ modalBtn.forEach((element, index) => {
 window.onscroll = function () {
   myFunction();
 };
+  hamburger.addEventListener('click', openMenuIcon);
+  closeButton.addEventListener('click', closeMenuIcon);
+  anchorTags.forEach((link) => {
+    link.addEventListener('click', closeMenuIcon);
+  });
+}
+
+main();
