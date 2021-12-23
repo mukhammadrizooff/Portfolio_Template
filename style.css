@@ -250,7 +250,7 @@ p {
   margin-right: 2rem;
 }
 
-/*Work section*/
+/* Work section */
 
 .works {
   width: 100%;
@@ -301,19 +301,20 @@ p {
   color: #172b4d;
 }
 
-.works__left-block .frame-2 {
+ .frame-2 {
   display: flex;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
-.works__left-block .frame-2 .client {
+.frame-2 .client {
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(#172b4d);
+  color: #172b4d;
   margin: 0;
 }
 
-.works__left-block .frame-2 .counter {
+.frame-2 .counter {
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
@@ -321,7 +322,7 @@ p {
   margin: 0 1rem;
 }
 
-.works__left-block .frame-2 .role,
+.frame-2 .role,
 .year {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -341,7 +342,7 @@ p {
   color: #172b4d;
 }
 
-.works__left-block .works__tags {
+.works__tags {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -352,6 +353,27 @@ p {
   display: flex;
   list-style-type: none;
   margin-top: 1rem;
+}
+
+.modal_tags {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #7f8cff;
+  margin: 2rem 0 4rem 0;
+  display: flex;
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.modal_tags li {
+  font-style: normal;
+  background-color: #ebebff;
+  margin: 0 0.3rem;
+  border-radius: 0.8rem;
+  padding: 0.4rem 1rem;
 }
 
 .about-myself .langguages-ul li {
@@ -381,7 +403,7 @@ p {
   padding-bottom: 2em;
 }
 
-.works__left-block .works__tags li {
+.works__tags li {
   font-style: normal;
   background-color: #ebebff;
   margin: 0 0.3rem;

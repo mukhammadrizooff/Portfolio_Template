@@ -104,7 +104,7 @@ function createCard(element) {
     <li>${element.languages[1]}</li>
     <li>${element.languages[2]}</li>
   </ul>
-  <a href="#works_card2" class="btn works_action" id="showModal">See Project</a>
+  <a href="#works_card2" class="btn works__action" id="showModal">See Project</a>
 </section>
 `;
 }
