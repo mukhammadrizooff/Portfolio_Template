@@ -20,23 +20,6 @@ anchorTags.forEach((link) => {
   link.addEventListener('click', closeMenuIcon);
 });
 
-// Menu bar scroll control
-
-// const header = document.getElementById("header");
-// const sticky = header.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
-
-// window.onscroll = function () {
-//   myFunction();
-// };
-
 // Project Objects
 
 const projectObjects = [
