@@ -376,6 +376,14 @@ p {
   padding: 0.4rem 1rem;
 }
 
+.works__tags li {
+  font-style: normal;
+  background-color: #ebebff;
+  margin: 0 0.3rem;
+  border-radius: 0.8rem;
+  padding: 0.4rem 1rem;
+}
+
 .about-myself .langguages-ul li {
   display: flex;
   flex-direction: row;
@@ -401,14 +409,6 @@ p {
 .p-underline {
   border-bottom: thin solid #dfe1e6;
   padding-bottom: 2em;
-}
-
-.works__tags li {
-  font-style: normal;
-  background-color: #ebebff;
-  margin: 0 0.3rem;
-  border-radius: 0.8rem;
-  padding: 0.4rem 1rem;
 }
 
 .works__action {
