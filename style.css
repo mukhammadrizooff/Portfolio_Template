@@ -612,6 +612,104 @@ p {
   background-color: white;
 }
 
+@keyframes slide {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* Modal settings */
+
+.modal-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  inset: 0 0 0 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.show-modal {
+  display: flex;
+}
+
+.modal-card {
+  background-color: #fff;
+  width: 75%;
+  height: 85%;
+  overflow: auto;
+  padding: 2rem;
+  border-radius: 25px;
+}
+
+.close-button-2 {
+  float: right;
+  padding: 0.5rem;
+  color: #67798e;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.modal__project-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 1rem;
+}
+
+.snapshoot-modal {
+  width: 100%;
+  height: 100%;
+}
+
+.snapshoot-modal .img-modal {
+  width: 100%;
+}
+
+.modal__primary-par {
+  font-family: "Poppins", sans-serif;
+  width: 28rem;
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #172b4d;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.modal-btn {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-icon {
+  margin-left: 4px;
+}
 
 /* Medium Devices, Desktops */
 
