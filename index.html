@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -17,6 +15,8 @@
 
       gtag("config", "G-TE9LJHG9GK");
     </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -43,33 +43,33 @@
         <ul class="mobile-menu-ul" id="anchor-tags">
           <li><a href="#works">Portfolio</a></li>
           <li><a href="#about-myself">About</a></li>
-          <li><a href="#contact-me">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </section>
     <!--Desktop Menu-bar-->
-    <header>
+    <header id="header">
       <nav>
         <ul class="header-ul">
-          <li><a class="logo" href="#">My Logo</a></li>
+          <li><a class="header-logo" href="#">My Logo</a></li>
           <li>
-            <a href="#" class="nav__button" id="humburger-btn"
+            <a href="#" id="hamburger-btn" class="nav__button"
               ><i class="fas fa-bars"></i
             ></a>
           </li>
           <li class="desktop-menu-container">
             <ul class="desktop-menu">
-              <li><a href="#works">Portoflio</a></li>
+              <li><a href="#works">Portfolio</a></li>
               <li><a href="#about-myself">About</a></li>
-              <li><a href="#contact-me">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
-
+    <!--Main part-->
     <main>
-      <section class="headline">
+      <section id="headline" class="headline">
         <h1>
           I’m Mukhammad-Rizo <br />
           Glad to see you!
@@ -126,146 +126,29 @@
             </li>
           </ul>
         </section>
-      </section>
+      </section><!--END OF SECTION HEADLINE BACKGROUND-->
 
-      <section class="works" id="works">
-        <article class="works__card">
-          <figure class="snapshoot">
-            <img src="images/Snapshoot-Portfolio.png" alt="" />
-          </figure>
-          <section class="works__left-block">
-            <div class="works__primary-text">
-              <h3 class="works__project-title">Tonic</h3>
-              <div class="frame-2">
-                <span class="client">CANOPY</span>
-                <div class="counter"></div>
-                <span class="role">Back End Dev</span>
-                <div class="counter"></div>
-                <span class="year">2015</span>
-              </div>
-            </div>
-            <p class="works__primary-par">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="works__tags">
-              <li>html</li>
-              <li>css</li>
-              <li>javaScript</li>
-            </ul>
-            <a href="#" class="btn works__action">See Project</a>
-          </section>
-        </article>
+      <section class="works" id="works"></section>
 
-        <article class="works__card card2">
-          <figure class="snapshoot">
-            <img src="images/Snapshoot-Portfolio2.png" alt="" />
-          </figure>
-          <section class="works__left-block block2">
-            <div class="works__primary-text">
-              <h3 class="works__project-title">Multi-Post Stories</h3>
-              <div class="frame-2">
-                <span class="client">FACEBOOK</span>
-                <div class="counter"></div>
-                <span class="role">Full Stack Dev</span>
-                <div class="counter"></div>
-                <span class="year">2015</span>
-              </div>
-            </div>
-            <p class="works__primary-par">
-              Experimental content creation feature that allows users to add to
-              an existing story over the course of a day without spamming their
-              friends.
-            </p>
-            <ul class="works__tags">
-              <li>html</li>
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>javaScript</li>
-            </ul>
-            <a href="#" class="btn works__action">See Project</a>
-          </section>
-        </article>
-
-        <article class="works__card">
-          <figure class="snapshoot">
-            <img src="images/Snapshoot-Portfolio3.png" alt="" />
-          </figure>
-          <section class="works__left-block">
-            <div class="works__primary-text">
-              <h3 class="works__project-title">Facebook 360</h3>
-              <div class="frame-2">
-                <span class="client">FACEBOOK</span>
-                <div class="counter"></div>
-                <span class="role">Full Stack Dev</span>
-                <div class="counter"></div>
-                <span class="year">2015</span>
-              </div>
-            </div>
-            <p class="works__primary-par">
-              Exploring the future of media in Facebook's first Virtual Reality
-              app; a place to discover and enjoy 360 photos and videos on Gear
-              VR.
-            </p>
-            <ul class="works__tags">
-              <li>html</li>
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>javaScript</li>
-            </ul>
-            <a href="#" class="btn works__action">See Project</a>
-          </section>
-        </article>
-
-        <article class="works__card card2">
-          <figure class="snapshoot">
-            <img src="images/Snapshoot-Portfolio4.png" alt="" />
-          </figure>
-          <section class="works__left-block block2">
-            <div class="works__primary-text">
-              <h3 class="works__project-title">Uber Navigation</h3>
-              <div class="frame-2">
-                <span class="client">UBER</span>
-                <div class="counter"></div>
-                <span class="role">Lead Developer</span>
-                <div class="counter"></div>
-                <span class="year">2018</span>
-              </div>
-            </div>
-            <p class="works__primary-par">
-              A smart assistant to make driving more safe, efficient, and fun by
-              unlocking your most expensive computer: your car.
-            </p>
-            <ul class="works__tags">
-              <li>html</li>
-              <li>css</li>
-              <li>javaScript</li>
-            </ul>
-            <a href="#" class="btn works__action">See Project</a>
-          </section>
-        </article>
-      </section>
-
-      <section class="about-myself" id="about-myself">
+      <section class="about-myself" id="about-myself">        
         <section class="about-myself__block">
           <h1 class="about-myself__title">About Myself</h1>
           <p class="about-myself__primary-par">
             I am a software developer - that is, a person who creates software
             entirely. I help with the design or writing of the software, usually
             I am the one who manages the project or just does the basic work.
-            Like most software developers, I am a leading software engineer,
-            contact me.
+            Like most software developers, I am a leading software engineer.
           </p>
           <h2 class="h2-span">LET’S CONNECT</h2>
           <section class="headline__social-media">
             <ul class="social-media__ul">
               <li>
                 <a
-                  href="https://twitter.com/Mukhammadrizo5"
+                  href="https://github.com/mukhammadrizooff"
                   rel="noreferrer noopener"
                   target="_blank"
                 >
-                  <img src="images/twitter_icon.svg" alt="twitter logo" />
+                  <img src="images/github_icon.svg" alt="github logo" />
                 </a>
               </li>
               <li>
@@ -278,6 +161,20 @@
                 </a>
               </li>
               <li>
+                <a href="#"
+                  ><img src="images/like_icon.svg" alt="angellist logo"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/Mukhammadrizo5"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >
+                  <img src="images/twitter_icon.svg" alt="twitter logo" />
+                </a>
+              </li>
+              <li>
                 <a
                   href="https://medium.com/@mukhammadrizooff"
                   rel="noreferrer noopener"
@@ -285,20 +182,6 @@
                 >
                   <img src="images/medium_icon.svg" alt="medium logo" />
                 </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/mukhammadrizooff"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  <img src="images/github_icon.svg" alt="github logo" />
-                </a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="images/like_icon.svg" alt="angellist logo"
-                /></a>
               </li>
             </ul>
             <a href="#about-myself" class="btn works__resume">Get my resume</a>
@@ -342,7 +225,7 @@
         </section>
       </section>
 
-      <section class="form-container" id="contact-me">
+      <section class="form-container" id="contact">
         <h3 class="form-title">Contact me</h3>
         <p class="form-p">
           If you have an application you are interested in developing, a feature
@@ -368,8 +251,8 @@
               <input
                 type="email"
                 placeholder="email"
-                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                 name="email"
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                 required
               />
             </li>
@@ -390,6 +273,11 @@
           </ul>
         </form>
       </section>
+      <section
+        class="modal-container"
+        id="modal-container"
+        onclick="closeModal()"
+      ></section>
     </main>
     <script src="script.js"></script>
   </body>
