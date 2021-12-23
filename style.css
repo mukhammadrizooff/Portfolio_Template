@@ -1,4 +1,3 @@
-/* CSS variables */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
@@ -32,6 +31,15 @@ body {
 
 header {
   width: 100%;
+  position: sticky;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
 }
 
 header nav .header-ul {
@@ -41,30 +49,31 @@ header nav .header-ul {
   align-items: center;
   height: 44px;
   background-color: white;
-  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   list-style-type: none;
 }
 
-header nav ul li .logo {
+header nav ul li .header-logo {
   font-size: 2rem;
   font-weight: 700;
   margin-left: 2.8rem;
-  color: #1427cf;
+  color: #1f30c3;
   text-decoration: none;
 }
 
-header nav ul li .logo:hover {
+header nav ul li .header-logo:hover {
   color: white;
-  background-color: #7f8cff;
+  background-color: #3141d1;
 }
 
-header nav ul li .logo:active {
+header nav ul li .header-logo:active {
   color: white;
   background-color: #2230d2;
 }
 
-header nav ul li .logo:disabled,
-header nav ul li .logo[disabled] {
+header nav ul li .header-logo:disabled,
+header nav ul li .header-logo[disabled] {
   color: #172b4d;
   background-color: white;
 }
@@ -88,7 +97,7 @@ header .nav__button i {
 
 header .nav__button:hover {
   color: white;
-  background-color: #7f8cff;
+  background-color: white;
 }
 
 header .nav__button:active {
@@ -109,6 +118,11 @@ header .desktop-menu-container {
 .menu-mobile {
   width: 100vw;
   height: 100vh;
+}
+
+.blurry {
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
 }
 
 .mobile-menu-container {
@@ -183,6 +197,7 @@ main .headline {
   padding-bottom: 14rem;
   background-color: #fff;
   border-bottom-left-radius: 80px 80px;
+  z-index: 1;
 }
 
 h1 {
@@ -213,7 +228,7 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #1427cf;
+  color: #1f30c3;
   margin-top: 1.2rem;
 }
 
@@ -235,6 +250,8 @@ p {
   margin-right: 2rem;
 }
 
+/*Work section*/
+
 .works {
   width: 100%;
   display: grid;
@@ -248,7 +265,7 @@ p {
 .works__card {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 2rem 2rem 4rem 2rem;
   flex-direction: column;
   background: #fff;
@@ -292,7 +309,7 @@ p {
 .works__left-block .frame-2 .client {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #172b4d;
+  color: var(#172b4d);
   margin: 0;
 }
 
@@ -386,7 +403,7 @@ p {
 
 .works__action:hover {
   color: white;
-  background-color: #7f8cff;
+  background-color: #3141d1;
 }
 
 .works__action:active {
@@ -481,6 +498,7 @@ p {
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 80px 80px;
+  background-size: contain;
   background-image: url("images/form_bg_mobile.svg");
   background-repeat: no-repeat;
   background-position: center right;
@@ -504,6 +522,8 @@ p {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  animation-duration: 1s;
+  animation-name: slide;
 }
 
 .form {
@@ -559,8 +579,8 @@ p {
   border-radius: 8px;
   border-style: none;
   padding: 1.2rem 2rem;
-  background-color: #fff;
-  color: #7f8cff;
+  background-color: rgb(255, 255, 255);
+  color: #3141d1;
   font-size: 1.7rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -577,7 +597,7 @@ p {
 
 .contact-button:hover {
   color: white;
-  background-color: #7f8cff;
+  background-color: #3141d1;
   box-shadow: 16px 56px 40px -22px rgba(96, 111, 255, 0.1);
 }
 
@@ -592,13 +612,16 @@ p {
   background-color: white;
 }
 
+
+/* Medium Devices, Desktops */
+
 @media (min-width: 992px) {
   header {
-    margin-top: 2rem;
+    padding-top: 2rem;
     background-color: #fff;
   }
 
-  .header-ul li .logo {
+  .header-ul li .header-logo {
     font-size: 1.6rem;
     font-weight: 700;
     margin-left: 10rem;
@@ -640,6 +663,7 @@ p {
 
   main .headline {
     width: 100%;
+    margin: 0 auto;
     background-image: url("images/header_bg_2x.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -678,13 +702,18 @@ p {
   }
 
   .works__card {
-    width: 90rem;
+    width: 110rem;
     height: 39.6rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     padding: 0 2rem;
+  }
+
+  .works__card:hover {
+    border: 0.2rem solid #a7aeff;
+    transition-duration: 0.1s;
   }
 
   .card2 {
@@ -723,6 +752,7 @@ p {
     width: 100%;
     font-size: 1.3rem;
     line-height: 2.2rem;
+    padding-right: 2rem;
   }
 
   .about-myself {
@@ -730,7 +760,6 @@ p {
     justify-content: center;
     align-items: center;
     padding-left: 13rem;
-    padding-right: 13rem;
   }
 
   .about-myself__block {
@@ -748,7 +777,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 16%;
+    width: 24%;
   }
 
   .about-myself__primary-par {
@@ -785,5 +814,54 @@ p {
   .p-underline {
     border-bottom: thin solid #dfe1e6;
     padding-bottom: 2em;
+  }
+
+  .modal__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .modal__primary-par {
+    width: 64%;
+  }
+
+  .block-r {
+    width: 36%;
+  }
+
+  .modal__description .block-r .modal__tags {
+    margin-bottom: 2rem;
+  }
+
+  .modal-buttons {
+    justify-content: left;
+  }
+}
+
+/* Large Devices, Desktops */
+
+@media only screen and (min-width: 1100px) {
+  body {
+    margin: 0 auto;
+  }
+
+  .about-myself__block {
+    width: 60%;
+  }
+
+  .about-myself {
+    padding-left: 10rem;
+  }
+
+  .modal__primary-par {
+    width: 74%;
+    margin-right: 4rem;
+  }
+
+  .block-r {
+    width: 26%;
   }
 }
