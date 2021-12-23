@@ -34,13 +34,13 @@ header {
   position: sticky;
 }
 
-.sticky {
+/* .sticky {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9;
-}
+}  */
 
 header nav .header-ul {
   display: flex;
@@ -711,7 +711,7 @@ p {
   margin-left: 4px;
 }
 
-/* Medium Devices, Desktops */
+/* Media querry, Desktop */
 
 @media (min-width: 992px) {
   header {
