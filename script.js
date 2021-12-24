@@ -180,3 +180,22 @@ modalBtn.forEach((element, index) => {
     closeModalBtn.addEventListener('click', closeModal);
   });
 });
+
+// Validation contact form
+
+const form = document.querySelector('#form');
+const email = document.querySelector('#email');
+const invalidMsg = document.querySelector('#invalid-msg');
+const pattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*$/;
+
+form.addEventListener('submit', (event) => {
+  const emailInput = email.value;
+  if (!pattern.test(emailInput)) {
+    event.preventDefault();
+    invalidMsg.classList.add('showInvalid');
+    invalidMsg.textContent = '!!! The content of the email field has to be in lower case !!!';
+  } else {
+    msg.classList.remove('showInvalid');
+    msg.innerHTML = '';
+  }
+});
