@@ -195,8 +195,8 @@ form.addEventListener('submit', (event) => {
     invalidMsg.classList.add('showInvalid');
     invalidMsg.textContent = '!!! The content of the email field has to be in lower case !!!';
   } else {
-    msg.classList.remove('showInvalid');
-    msg.innerHTML = '';
+    invalidMsg.classList.remove('showInvalid');
+    invalidMsg.innerHTML = '';
   }
 });
 
@@ -207,7 +207,7 @@ form.addEventListener('submit', (event) => {
     invalidMsg.classList.add('showInvalid');
     invalidMsg.textContent = '!!! The content of the email field has to be in lower case !!!';
   } else {
-    msg.classList.remove('showInvalid');
-    msg.innerHTML = '';
+    invalidMsg.classList.remove('showInvalid');
+    invalidMsg.innerHTML = '';
   }
 });
