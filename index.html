@@ -234,6 +234,7 @@
           with it
         </p>
         <form
+          id="form"
           class="form"
           action="https://formspree.io/f/xjvlbplk"
           method="POST"
@@ -253,7 +254,7 @@
                 type="email"
                 placeholder="email"
                 name="email"
-                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                id="email"
                 required
               />
             </li>
@@ -266,6 +267,7 @@
                 required
               ></textarea>
             </li>
+            <li class="invalid-msg" id="invalid-msg"></li>
             <li class="input i-button">
               <button type="submit" class="btn contact-button">
                 Get in Touch
