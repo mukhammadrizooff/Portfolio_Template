@@ -216,7 +216,7 @@ form.addEventListener('submit', (event) => {
 // Variables
 const formStorage = document.querySelector('#form');
 const emailId = formStorage.querySelector('#email');
-const msgId = formStorage.querySelector('#valid-msg');
+const msgId = formStorage.querySelector('#valid-msgs');
 const nameId = formStorage.querySelector('#username');
 
 const keepInfo = () => {
