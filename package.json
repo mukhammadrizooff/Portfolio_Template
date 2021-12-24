@@ -1,0 +1,23 @@
+{
+  "name": "portfolio_template",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mukhammadrizooff/Portfolio_Template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mukhammadrizooff/Portfolio_Template/issues"
+  },
+  "homepage": "https://github.com/mukhammadrizooff/Portfolio_Template#readme",
+  "devDependencies": {
+    "hint": "^6.1.9"
+  }
+}
