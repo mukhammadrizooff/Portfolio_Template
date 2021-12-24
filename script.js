@@ -230,3 +230,14 @@ const keepInfo = () => {
   };
   localStorage.setItem("formInfo", JSON.stringify(formInfo));
 };
+
+nameId.addEventListener("change", keepInfo);
+emailId.addEventListener("change", keepInfo);
+msgId.addEventListener("change", keepInfo);
+
+window.addEventListener("load", () => {
+  const formInfo = JSON.parse(localStorage.getItem("formInfo"));
+  nameId.value = formInfo.name;
+  emailId.value = formInfo.email;
+  msgId.value = formInfo.msg;
+});
