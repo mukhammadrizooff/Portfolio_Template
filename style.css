@@ -548,6 +548,20 @@ p {
   animation-name: slide;
 }
 
+.invalid-msg {
+  font-family: "Poppins", sans-serif;
+  color: rgb(233, 29, 29);
+  background-color: #9ba5ff;
+  border-radius: 6px;
+  font-size: 2rem;
+  padding: 2rem;
+  display: none;
+}
+
+.showInvalid {
+  display: block;
+}
+
 .form {
   display: flex;
   flex-direction: column;
