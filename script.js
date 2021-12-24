@@ -211,3 +211,30 @@ form.addEventListener('submit', (event) => {
     invalidMsg.innerHTML = '';
   }
 });
+
+// Preserve data in the browser
+
+const formStorage = document.querySelector("#form");
+const emailId = formStorage.querySelector("#email");
+const msgId = formStorage.querySelector("#valid-msg");
+const nameId = formStorage.querySelector("#username");
+
+const keepInfo = () => {
+  const formInfo = {
+    name: nameId.value,
+    email: emailId.value,
+    msg: msgId.value,
+  };
+  localStorage.setItem("formInfo", JSON.stringify(formInfo));
+};
+
+nameId.addEventListener("change", keepInfo);
+emailId.addEventListener("change", keepInfo);
+msgId.addEventListener("change", keepInfo);
+
+window.addEventListener("load", () => {
+  const formInfo = JSON.parse(localStorage.getItem("formInfo"));
+  nameId.value = formInfo.name;
+  emailId.value = formInfo.email;
+  msgId.value = formInfo.msg;
+});
