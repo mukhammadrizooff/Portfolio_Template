@@ -199,3 +199,15 @@ form.addEventListener('submit', (event) => {
     msg.innerHTML = '';
   }
 });
+
+form.addEventListener('submit', (event) => {
+  const emailInput = email.value;
+  if (!pattern.test(emailInput)) {
+    event.preventDefault();
+    invalidMsg.classList.add('showInvalid');
+    invalidMsg.textContent = '!!! The content of the email field has to be in lower case !!!';
+  } else {
+    msg.classList.remove('showInvalid');
+    msg.innerHTML = '';
+  }
+});
