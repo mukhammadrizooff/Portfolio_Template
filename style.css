@@ -553,7 +553,10 @@ p {
   font-weight: 5rem;
   color: rgb(233, 29, 29);
   background-color: #9ba5ff;
-  
+  border-radius: 6px;
+  font-size: 2rem;
+  padding: 2rem;
+  display: none;
 }
 
 .showInvalid {
