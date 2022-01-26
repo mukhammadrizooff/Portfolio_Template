@@ -24,15 +24,15 @@ anchorTags.forEach((link) => {
 
 const projectObjects = [
   {
-    name: 'Tonic',
+    name: 'Awesome Books',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'In this project, I will build a basic website that allows users to add/remove books from a list.',
     descriptionPopup:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod nesciunt doloremque eveniet, recusandae esse voluptatibus sapiente optio totam! Aliquam deleniti necessitatibus debitis alias magnam mollitia culpa beatae totam qui?',
-    image: 'images/Snapshoot-Portfolio.png',
+      ' I will achieve that by using JavaScript objects , arrays, modules and install webpack. I will also need to dynamically modify the DOM and add basic events.',
+    image: 'images/projects/awesome-books.png',
     languages: ['html', 'css', 'javaScript'],
-    liveVersion: '#',
-    source: '#',
+    liveVersion: 'https://mukhammadrizooff.github.io/Awesome-books/',
+    source: 'https://github.com/mukhammadrizooff/Awesome-books',
   },
   {
     name: 'Multi-Post Stories',
@@ -140,11 +140,11 @@ function createModal(element) {
             <li>${element.languages[2]}</li>
           </ul>
           <div class="modal-buttons">
-            <a href="${element.liveVersion}" class="btn works__action modal-btn">
+            <a target="_blank" href="${element.liveVersion}" class="btn works__action modal-btn">
               See Live
               <img class="modal-icon" src="images/live-Icon.png" alt="live demo icon"/>
             </a>
-            <a href="${element.source}" class="btn works__action modal-btn">
+            <a target="_blank" href="${element.source}" class="btn works__action modal-btn">
               See Source
               <img class="modal-icon git-modal" src="images/github_icon_blue.svg" alt="github icon"/>
             </a>
