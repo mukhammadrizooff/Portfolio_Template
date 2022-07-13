@@ -30,42 +30,42 @@ const projectObjects = [
     descriptionPopup:
       ' I will achieve that by using JavaScript objects , arrays, modules and install webpack. I will also need to dynamically modify the DOM and add basic events.',
     image: 'images/projects/awesome-books.png',
-    languages: ['html', 'css', 'javaScript'],
+    languages: ['HTML', 'CSS', 'JavaScript'],
     liveVersion: 'https://mukhammadrizooff.github.io/Awesome-books/',
     source: 'https://github.com/mukhammadrizooff/Awesome-books',
   },
   {
-    name: 'Multi-Post Stories',
+    name: 'G20 Bali Summit',
     description:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      'The 2022 G20 Bali summit is the upcoming seventeenth meeting of Group of Twenty (G20), the summit scheduled to take place in Bali, Indonesia, in 2022.',
     descriptionPopup:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod nesciunt doloremque eveniet, recusandae esse voluptatibus sapiente optio totam! Aliquam deleniti necessitatibus debitis alias magnam mollitia culpa beatae totam qui?',
-    image: 'images/Snapshoot-Portfolio2.png',
-    languages: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    liveVersion: '#',
-    source: '#',
+      'In this project, I built the 2020 G20 Summit’s website using a style with ECMAScript 6 functionalities and a sleek design. It has Desktop and Mobile version.',
+    image: 'images/g-20.png',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    liveVersion: 'https://mukhammadrizooff.github.io/2022-G20-Bali-summit/',
+    source: 'https://github.com/mukhammadrizooff/2022-G20-Bali-summit',
   },
   {
-    name: 'Facebook 360',
+    name: 'COVID-19',
     description:
-      'Exploring the future of media in Facebook first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+      'ABOUT COVID-19: The first symptoms of the virus appeared on December 31, 2019 in Wuhan, China. Since then, the number of infections has increased across the continent and around the world. According to the latest data, the situation in China has reached 43 new cases since Thursday. In total, 4976 people were infected with the virus.',
     descriptionPopup:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod nesciunt doloremque eveniet, recusandae esse voluptatibus sapiente optio totam! Aliquam deleniti necessitatibus debitis alias magnam mollitia culpa beatae totam qui?',
-    image: 'images/Snapshoot-Portfolio3.png',
-    languages: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    liveVersion: '#',
-    source: '#',
+      'In this project, you can see the latest updated data on people infected with the COVID-19 virus in continental states. And this project was built using JavaScript, React and Redux.',
+    image: 'images/covid-19.png',
+    languages: ['React', 'Redux', 'HTML&CSS', 'javaScript'],
+    liveVersion: 'https://mukhammadrizooff-covid-19.netlify.app/',
+    source: 'https://github.com/mukhammadrizooff/COVID-19',
   },
   {
-    name: 'Uber Navigation',
+    name: 'Pay Modus',
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      'The Pay Modus App is going to be helpful to track your expenses and transactions.',
     descriptionPopup:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod nesciunt doloremque eveniet, recusandae esse voluptatibus sapiente optio totam! Aliquam deleniti necessitatibus debitis alias magnam mollitia culpa beatae totam qui?',
-    image: 'images/Snapshoot-Portfolio4.png',
-    languages: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    liveVersion: '#',
-    source: '#',
+      'The Pay Modus App is going to be helpful to track your expenses and transactions.',
+    image: 'images/pay-modus.png',
+    languages: ['PostgresSQL', 'Ruby on rails', 'HTML&CSS', 'javaScript'],
+    liveVersion: 'https://pay-modus-mukhammadrizooff.herokuapp.com/',
+    source: 'https://github.com/mukhammadrizooff/Budget-app',
   },
 ];
 
@@ -80,9 +80,9 @@ function createCard(element) {
     <div class="frame-2">
       <span class="client">CANOPY</span>
       <div class="counter"></div>
-      <span class="role">Back End Dev</span>
+      <span class="role">Full Stack Dev</span>
       <div class="counter"></div>
-      <span class="year">2015</span>
+      <span class="year">2022</span>
     </div>
   </div>
   <p class="works__primary-par">${element.description}</p>
@@ -123,9 +123,9 @@ function createModal(element) {
         <div class="frame-2">
           <span class="client">CANOPY</span>
           <div class="counter"></div>
-          <span class="role">Back End Dev</span>
+          <span class="role">Full Stack Dev</span>
           <div class="counter"></div>
-          <span class="year">2015</span>
+          <span class="year">2022</span>
         </div>
       </div>
       <figure class="snapshoot-modal">
